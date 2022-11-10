@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "|Nombre|Correo|\r |------|------|\r |Alberto Alvarez Herrera|a.alvarezh2@uniandes.edu.co|\r |Miguel Angel Orjuela Rocha|ma.orjuela73@uniandes.edu.co|\r |Nestor Pérez Espinel|n.pereze@uniandes.edu.co|\r |Arturo Reyna|a.reyna@uniandes.edu.co|",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alvarez-alberto/Ghost-test.git"
