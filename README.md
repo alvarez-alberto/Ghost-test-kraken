@@ -18,4 +18,10 @@
 |Crear miembro|Se debe poder crear un miembro a la página exitosamente|Arturo|
 |Editar post|Se debe poder editar un post existente en la pagina exitosamente|Conjunto|
 
+Herramientas a usar:
+<br/>**Kraken:**
+<br/>**Playwright:**
 
+Tareas:
+
+Realizar 4 Casos/escenarios de prueba  en ambas herramientas según la funcionalidad asignada.
