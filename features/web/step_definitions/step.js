@@ -40,3 +40,23 @@ Then('I wait for saved notification', async function() {
     let element = await this.driver.$("span[text='Saved']");
     expect(element).to.exist;
 })
+
+Then('I click on edit', async function() {
+    let element = await this.driver.$("[class='ember-view gh-post-list-cta edit ']");
+    return await element.click();
+})
+
+Then('I open editor menu', async function() {
+    let element = await this.driver.$("[title=Settings]");
+    return await element.click();
+})
+
+Then('I eliminate the author', async function() {
+    let element = await this.driver.$('[aria-label="remove element"]');
+    return await element.click();
+})
+
+Then('I wait for no author warning to appear', async function() {
+    let element = await this.driver.$("span[text='At least one author is required']");
+    expect(element).to.exist;
+})
