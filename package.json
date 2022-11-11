@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/alvarez-alberto/Ghost-test#readme",
   "dependencies": {
+    "chai": "^4.3.7",
     "kraken-node": "^1.0.24"
   },
   "devDependencies": {
