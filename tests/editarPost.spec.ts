@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('No debes ser capaz de dejar vacio el autor de un post', async ({ page }) => {
-    await page.click('text=New Post');
+    await page.click('[class="ember-view gh-post-list-cta edit "]');
     await page.click('[title=Settings]');
     await page.click('[aria-label="remove element"]');
     await expect(page.getByText('At least one author is required')).toBeTruthy();
