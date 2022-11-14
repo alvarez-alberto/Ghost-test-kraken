@@ -27,6 +27,7 @@ Tareas:
 
 Realizar 4 Casos/escenarios de prueba  en ambas herramientas según la funcionalidad asignada.
 
+Nota: Version Ghost 5.18.0
 
 # Instrucciones para ejecutar los escenarios de prueba en Kraken:
 1. Clonar el repo https://github.com/alvarez-alberto/Ghost-test.git
@@ -34,5 +35,22 @@ Realizar 4 Casos/escenarios de prueba  en ambas herramientas según la funcional
 3. En el archivo **Ghost-test\properties.json** colocar el usuario y el password para ghost
 4. En la ruta **Ghost-test\features** solo dejar un archivo con extension **.feature**
 5. En una consola  **Git Bash** ubicarse en la raiz del repo clonado y ejecuar el comando **./node_modules/kraken-node/bin/kraken-node run**
+
+
+
+
+# Instrucciones para ejecutar los escenarios de prueba en Playwright:
+1. Clonar el repo https://github.com/neztoring/Ghost-test-Playwright.git
+2. Ejecutar en la raiz del repositorio local ejecutar el comando **npm install**
+3. Ejecutar en la raiz del repositorio local ejecutar el comando **node <nombre del archivo .js>** Eje: node TagCrearPositivo.js
+4. En la consola se puede verificar los pasos que se ejecutan y en la carpeta **resultado** quedan las imagenes del escenario ejecutado
+  
+
+  
+  # Pros y Contras de las Herramientas:
+|Herramienta|Pros|Contras|
+|-------------|-----------|-|
+|**Kraken**|||
+|**Playwright**|||
 
 
