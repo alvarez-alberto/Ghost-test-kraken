@@ -55,5 +55,8 @@ Nota: Version Ghost 5.18.0
 ||- Permite aplicar el patrón Given-When-Then||
 ||||
 |**Playwright**|||
+||Incluye por defecto auto waits||
+||Permite aplicar el patron page object||
+  
 
 
