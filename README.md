@@ -34,3 +34,5 @@ Realizar 4 Casos/escenarios de prueba  en ambas herramientas según la funcional
 3. En el archivo **Ghost-test\properties.json** colocar el usuario y el password para ghost
 4. En la ruta **Ghost-test\features** solo dejar un archivo con extension **.feature**
 5. En una consola  **Git Bash** ubicarse en la raiz del repo clonado y ejecuar el comando **./node_modules/kraken-node/bin/kraken-node run**
+
+
