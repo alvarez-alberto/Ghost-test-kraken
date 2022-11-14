@@ -50,7 +50,10 @@ Nota: Version Ghost 5.18.0
   # Pros y Contras de las Herramientas:
 |Herramienta|Pros|Contras|
 |-------------|-----------|-|
-|**Kraken**|||
+|**Kraken**|- El uso del lenguaje natural para escribir los escenarios de prueba.|Los elementos html del sistema bajo pruebas debe tener definido un id único para que la localización de lo elementos sea más exacta|
+||- La presentación por cada escenario de prueba de los resultados es muy ordenada y fácil de entender||
+||||
+||||
 |**Playwright**|||
 
 
