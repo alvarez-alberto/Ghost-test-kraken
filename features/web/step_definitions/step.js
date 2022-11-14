@@ -197,4 +197,51 @@ Then('I click on the button Expand option Tags', async function () {
 /**********************end Tags********************************************************************** */
 
 
+/**********************begin Pages********************************************************************** */
+
+When("I go to pages", async function () {
+    let element = await this.driver.$('.gh-nav-top > ul:nth-child(2) > li:nth-child(2)');
+    return await element.click();
+});
+
+When("I click on new page", async function () {
+    let button = await this.driver.$(".view-actions > a");
+    return await button.click();
+});
+  
+When("I type the tittle {string}", async function (tittle) {
+    let tittleElement = await this.driver.$("[placeholder='Page title']");
+    return await tittleElement.setValue(tittle);
+});
+
+When("I click on publish", async function () {
+    let publishButton = await this.driver.$(".gh-btn:nth-child(2)");
+    await publishButton.click();
+    return await publishButton.click();
+});
+
+When("I click on publish continue", async function () {
+    let continueButton = await this.driver.$(".gh-publish-cta >button");
+    return await continueButton.click();
+});
+
+When("I click on publish page", async function () {
+    let publishPage = await this.driver.$(".gh-publish-cta >button");
+    return await publishPage.click();
+});
+
+  
+When("I go to pages section", async function () {
+    let editorSection = await this.driver.$(".gh-btn-editor");
+    await editorSection.click();
+    let pagesSection = await this.driver.$(".gh-btn-editor");
+    return  await pagesSection.click();
+});
+     
+Then("I check the first row with tittle {string}", async function (tittle) {
+    tittleElement = await this.driver.$(".pages-list > li:nth-child(1) > a:nth-child(1) > h3").getText();
+    return assert.equal(tittleElement,tittle);
+});
+  
+
 
