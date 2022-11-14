@@ -4,8 +4,8 @@ Feature: Crear Miembro
 Scenario: No debes ser capaz de crear un miembro sin email
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
@@ -21,8 +21,8 @@ Scenario: No debes ser capaz de crear un miembro sin email
 Scenario: Debes ser capaz de crear un miembro sin nombre
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
@@ -38,8 +38,8 @@ Scenario: Debes ser capaz de crear un miembro sin nombre
 Scenario: No debes ser capaz de crear un miembro con email repetido
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
@@ -55,8 +55,8 @@ Scenario: No debes ser capaz de crear un miembro con email repetido
 Scenario: Debes ser capaz de crear un miembro con nombre y email
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/members/new"
@@ -73,8 +73,8 @@ Scenario: Debes ser capaz de crear un miembro con nombre y email
 Scenario: No debes ser capaz de dejar vacio el autor de un post
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/#/posts"

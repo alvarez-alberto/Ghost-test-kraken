@@ -4,8 +4,8 @@ Feature: Editar Post
 Scenario: No debes ser capaz de dejar vacio el autor de un post
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
-    Then I enter email 'a.reyna@uniandes.edu.co'
-    Then I enter password 'Naranjo248.'
+    Then I enter email "<USERNAME>"
+    Then I enter password  "<PASSWORD>"
     Then I click sign in
     And I wait for 5 seconds
     Given I navigate to page "http://localhost:2368/ghost/#/posts"
