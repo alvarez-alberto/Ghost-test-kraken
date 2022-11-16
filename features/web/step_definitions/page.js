@@ -56,7 +56,7 @@ When("I go pages publish", async function () {
 });
      
 Then("I check the first row with tittle {string}", async function (tittle) {
-    tittleElementText = await this.driver.$(".pages-list > li:nth-child(1) > a:nth-child(1) > h3").getText();
+    let tittleElementText = await this.driver.$(".pages-list > li:nth-child(1) > a:nth-child(1) > h3").getText();
     return assert.equal(tittleElementText,tittle);
 });
 
@@ -66,4 +66,19 @@ When("I go pages drafts", async function () {
     let pagesPublish = await this.driver.$(".ember-power-select-options > li:nth-child(2)");
     return  await pagesPublish.click();
 });
-  
+
+When("I select draft page", async function () {
+    let firstPage = await this.driver.$(".pages-list > li:nth-child(1) > a:nth-child(1)");
+    return  await firstPage.click();
+});
+
+When("I click on remove author", async function () {
+    let remove = await this.driver.$(".ember-power-select-multiple-remove-btn");
+    return  await remove.click();
+});
+
+Then("I check the error message {string}", async function (tittle) {
+    let errorMessage = await this.driver.$(".for-select.form-group.error > p").getText();
+    return assert.equal(errorMessage,tittle);
+});
+
