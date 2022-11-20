@@ -24,7 +24,7 @@ Scenario: Como usuario inicio sesion creo una pagina y elimino el autor para mos
   When I click on settings
   When I click on remove author
   Then I check the error message 'At least one author is required.'
-    Then I take screenshot "page/crearPageWithoutAuthor" test, "7.author_required" step
+  Then I take screenshot "page/crearPageWithoutAuthor" test, "7.author_required" step
 
 
 

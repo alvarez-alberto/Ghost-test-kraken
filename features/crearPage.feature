@@ -35,7 +35,7 @@ Scenario: Como usuario inicio sesion y creo una pagina con titulo New page test
   Then I take screenshot "page/crearPage" test, "8.Ingreso_page" step
   When I go pages publish
   And I wait for 2 seconds
-  Then I take screenshot "page/crearPage" test, "8.lista_pages" step
+  Then I take screenshot "page/crearPage" test, "9.lista_pages" step
   Then I check the first row with tittle 'New page test'
 
   

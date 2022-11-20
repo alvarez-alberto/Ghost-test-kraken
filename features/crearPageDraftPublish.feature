@@ -17,7 +17,7 @@ Scenario: Como usuario inicio sesion creo una pagina la dejo en borrador y despu
   And I wait for 3 seconds
   Then I take screenshot "page/crearPageDraftPublish" test, "4.Ingreso_pages" step
   When I click on new page
-  Then I take screenshot "crearPageDraftPublish/crearPage" test, "5.Nueva_pagina" step
+  Then I take screenshot "page/crearPageDraftPublish" test, "5.Nueva_pagina" step
   When I type the tittle 'New page test in draft and publish'
   And I wait for 5 seconds
   Then I take screenshot "page/crearPageDraftPublish" test, "6.Titulo" step
@@ -39,8 +39,8 @@ Scenario: Como usuario inicio sesion creo una pagina la dejo en borrador y despu
   Then I take screenshot "page/crearPageDraftPublish" test, "10.Publicar_Page" step
   When I go to editor section
   And I wait for 2 seconds
-  Then I take screenshot "page/crearPageDraftPublish" test, "11.Ingreso_page" step
   When I go to pages section
+  Then I take screenshot "page/crearPageDraftPublish" test, "11.Ingreso_page" step
   When I go pages publish
   And I wait for 2 seconds
   Then I take screenshot "page/crearPageDraftPublish" test, "12.publish_pages" step
