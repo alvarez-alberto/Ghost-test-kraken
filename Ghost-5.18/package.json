@@ -1,0 +1,24 @@
+{
+  "name": "ghost-test",
+  "version": "1.0.0",
+  "description": "|Nombre|Correo|\r |------|------|\r |Alberto Alvarez Herrera|a.alvarezh2@uniandes.edu.co|\r |Miguel Angel Orjuela Rocha|ma.orjuela73@uniandes.edu.co|\r |Nestor Pérez Espinel|n.pereze@uniandes.edu.co|\r |Arturo Reyna|a.reyna@uniandes.edu.co|",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarez-alberto/Ghost-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarez-alberto/Ghost-test/issues"
+  },
+  "homepage": "https://github.com/alvarez-alberto/Ghost-test#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "kraken-node": "^1.0.24"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}
